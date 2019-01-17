@@ -1,0 +1,13 @@
+I"÷(function() {
+  var burger, drop_down;
+
+  burger = document.getElementById('ham_burger');
+
+  drop_down = document.getElementById('drop_down');
+
+  burger.style.backgroundColor = 'red';
+
+  drop_down.style.backgroundColor = 'yellow';
+
+}).call(this);
+:ET

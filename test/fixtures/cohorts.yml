@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  startdate: 2019-01-08 19:52:51
+  enddate: 2019-01-08 19:52:51
+  course_id: 1
+  student_id: 1
+  instructr_id: 1
+
+two:
+  startdate: 2019-01-08 19:52:51
+  enddate: 2019-01-08 19:52:51
+  course_id: 1
+  student_id: 1
+  instructr_id: 1

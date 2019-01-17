@@ -1,0 +1,22 @@
+I"Ü(function() {
+  var animate, burger, drop_down;
+
+  burger = document.getElementById('ham_burger');
+
+  drop_down = document.getElementById('drop_down');
+
+  animate = function() {
+
+    /**
+    	burger.style.animation = "rotate";
+    drop_down.style.animation = "slide";
+    drop_down.style.display = "inline";*
+     */
+    burger.style.backgroundColor = 'red';
+    drop_down.style.backgroundColor = 'yellow';
+  };
+
+  burger.addEventListener(mouseover, animate);
+
+}).call(this);
+:ET

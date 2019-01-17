@@ -1,0 +1,55 @@
+
+#student_layout{
+    width:80%;
+    height:450px;
+    margin:0 auto;
+    margin-top:50px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    border-radius:5px;
+}
+
+#about_student{
+    width:100%;
+    height:500px;
+    margin:0 auto;
+    margin-top:100px;
+}
+.student_card{
+    width:30%;
+    height:400px;
+    float:left;
+    border-radius:5px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.6);
+}
+.student_meta, .student_header, .student_extra_content, .student_description{
+    margin-bottom:10px;
+    width:80%;
+    margin-left:35px;
+    text-align: left;
+    font-size:12px;
+}
+.student_meta{
+    margin-top:10px;
+}
+#student_username{
+    margin:15px 0px 15px 0px;
+}
+#student_image{
+    width:250px;
+    height:250px;
+    margin:0px 0px 20px 35px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.6);
+    border-radius:5px;
+}
+.student_center_card{
+    width:80%;
+    height:100%;
+}
+
+.student_data{
+    width:60%;
+    height:100%;
+    float:left;
+    margin-left:50px;
+    padding-bottom:50px;
+}

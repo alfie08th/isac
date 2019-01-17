@@ -1,0 +1,31 @@
+<h1>Instructor</h1>
+<table class="ui selectable inverted table">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>User Name</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th class="Left aligned">Education</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @instructors.each do|instructor| %>
+        <tr>
+            <td><%=instructor.f_name %></td>
+            <td><%=instructor.l_name %></td>
+            <td><%=instructor.username %></td>
+            <td><%=instructor.email %></td>
+            <td><%=instructor.age %></td>
+            <td><%=instructor.salary %></td>
+            <td><%=instructor.education %></td>
+            <td><a href="/instructor/<%= instructor.id %>">Show</a></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+<div id="instructor_layout">
+</div>

@@ -1,0 +1,13 @@
+I"L(function() {
+  var first_content_left, first_content_right;
+
+  first_content_left = document.getElementById('first_content_left');
+
+  first_content_left.style.backgroundColor = 'tomato';
+
+  first_content_right = document.getElementById('first_content_right');
+
+  first_content_right.style.backgroundColor = 'pink';
+
+}).call(this);
+:ET

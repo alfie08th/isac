@@ -1,0 +1,45 @@
+#cohort_big_div{
+    width:100%;
+    height:800px;
+    margin:0 auto;
+    margin-top:50px;
+    background-color:tomato;
+    position:relative;
+}
+.three_column{
+    display:inline;
+    width:33.33%;
+    float:left;
+}
+.columns{
+    width:100%;
+    height:250px;
+}
+.cohort_column_content{
+    margin-left:20px;
+}
+.cohort_column{
+    height:250px;
+    margin-bottom:20px;
+    width:33.33%;
+    float:left;
+    position:relative;
+}
+.background_image,.cohort_image_shadow{
+    width:250px;
+    height:250px;
+    position:absolute;
+    z-index: 0;
+    top:0;
+}
+.cohort_title{
+    position:absolute;
+    z-index: 1;
+    top:0;
+
+}
+.view_more{
+    position:absolute;
+    z-index: 2;
+    top:0;
+}

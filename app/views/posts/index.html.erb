@@ -1,0 +1,27 @@
+<form id ="form2" class="ui form" method="POST" action="/posts">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+        <div class="field">
+            <label>Add Title</label>
+            <input name="title" required type="text" type="text">
+        </div>
+        <div class="field">
+            <label>Add Content</label>
+            <textarea id="user_blog_paragraph" required type="text" name="body" cols="50" rows="10"></textarea>
+        </div>
+        <div class="field">
+            <label>Author</label>
+            <input name="author" required type="text" type="text">
+        </div>
+        <button class="ui button"  type="submit"> Submit </button>
+</form>
+
+<div id="user_post">
+    <% @posts.each do |post| %>
+        <h2 class="post_title"><%=post.title%></h2>
+        <p class="post_body"><%= post.body %> </p>
+            <a href="/post/<%= post.user_id %>">Delete</a>
+        <p class="post_creator"><b>Post by <%= post.user.username %></b> </p>
+    <%end%>
+</div>
+

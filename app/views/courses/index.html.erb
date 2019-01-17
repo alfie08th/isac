@@ -1,0 +1,13 @@
+<div id="course_big_div">
+    <h1>Courses</h1>
+    <div class="three_course_column">
+        <% @courses.each do |course| %>
+            <div class="course_column">
+                <img class="course_background_image" src="https://tse1.mm.bing.net/th?id=OIP.dGcKWEbX6A9GH5dlaQSQ6AHaFU&pid=15.1&P=0&w=219&h=158">
+                <h4 class="course_title"><%=course.name %></h4>
+                <h4 class="course_hours"><%=course.hours %> hours</h4>
+                <h4 class="course_view_more"><a href="/course/<%= course.id %>">View</a></h4>
+            </div>
+        <% end %>
+    </div>
+</div>

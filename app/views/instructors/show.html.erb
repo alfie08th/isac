@@ -1,0 +1,36 @@
+<div id="about_instructor">
+<div class="card instructor_card">
+  <div class="image">
+    <img id="instructor_image" src="https://semantic-ui.com/images/avatar2/large/kristy.png">
+  </div>
+  <div class="content">
+    <a class="instructor_header"><%= @instructor.username %></a>
+    <div class="instructor_meta">
+      <span class="instructor_date">Joined in <%= @instructor.created_at %></span>
+    </div>
+    <div class="instructor_description">
+      <%= @instructor.username %> is an <%= @job_title %> living in <%= @location %>
+    </div>
+  </div>
+  <div class="extra content instructor_extra_content">
+    <a>
+      <i class="user icon user_icon"></i>
+      22 Friends
+    </a>
+  </div>
+</div>
+    <div class="instructor_data">
+        <label> User Name</label>
+        <h3 id="instructor_username"><%= @instructor.username %></h3>
+        <label> Email</label>
+        <h3 id="instructor_username"><%= @instructor.email %></h3>
+        <label> Age</label>
+        <h3 id="instructor_username"><%= @instructor.age %></h3>
+        <label> Salary</label>
+        <h3 id="instructor_username">$<%= @instructor.salary.to_s.reverse.gsub(/...(?=.)/,'\&,').reverse %></h3>
+        <label> Education</label>
+        <h3 id="instructor_username"><%= @instructor.education %></h3>
+        <label> Course Taught</label>
+        <h3 id="instructor_username"><%= Course.first.name %></h3>
+    </div>
+</div>

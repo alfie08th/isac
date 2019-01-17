@@ -1,0 +1,9 @@
+I"·(function() {
+  var first_content_left;
+
+  first_content_left = document.getElementById('first_content_left');
+
+  first_content_left.style.backgroundColor = 'tomato';
+
+}).call(this);
+:ET

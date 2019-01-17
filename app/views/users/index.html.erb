@@ -1,0 +1,28 @@
+<div id="log_in_page">
+    <a  href="/"><h1>Sign Up</h1></a>
+    <br>
+    <div class="three_fields">
+        <a href="#1"><button class="ui google plus button"><i class="google icon"></i>Sign Up with Google</button></a>
+        <a href="#2"<button class="ui facebook button"><i class="facebook icon"></i>Facebook</button></a>
+        <a href="#3"><button class="ui twitter button"><i class="twitter icon"></i>Twitter</button></a>
+    </div>
+    <br>
+    <div style="width:400px; height:400px; margin:0 auto;">
+        <form id="form1" class="ui form" method="POST" action="/users">
+            <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+            <div class="field">
+                <label>User Name</label>
+                <input name="username" required type="text" type="text">
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input name="email" required type="email" type="text">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input name="password" required type="password" type="text">
+            </div>
+            <button class="ui twitter button"  type="submit"> Create Account </button>
+        </form>
+    </div>
+</div>

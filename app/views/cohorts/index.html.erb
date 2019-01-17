@@ -1,0 +1,16 @@
+
+
+<div class="center3">
+  <% @cohorts.each do |c| %>
+    <div class="ui card three_column">
+      <a class="image" href="#">
+        <%= image_tag "https://tse4.mm.bing.net/th?id=OIP.2Y7fiAWyuhg-2Yj1H2r9CwHaHp&pid=15.1&P=0&w=300&h=300" %>
+      </a>
+      <div class="content cohort_column_content">
+        <div class="meta">
+          <a><%= c.students.count %> students atended</a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

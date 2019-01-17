@@ -1,0 +1,31 @@
+<h1>Students</h1>
+
+<% if signed_in? %>
+  <%= current_user.email %>
+  <%= button_to "Sign out", sign_out_path, method: :delete %>
+<% else %>
+  <%= link_to "Sign in", sign_in_path %>
+<% end %>
+
+<table class="ui selectable inverted table">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Birthday</th>
+      <th class="left aligned">Education</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @students.each do |student| %>
+        <tr>
+            <td><%= student.f_name %></td>
+            <td><%= student.l_name %></td>
+            <td><%= student.birthday %></td>
+            <td><%= student.education %></td>
+            <td><a href="/student/<%= student.id %>">Show</a></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>

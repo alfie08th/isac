@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+         <div id="my_nav_bar">
+            <div id="nav_one"><div id="about_div"><a id="about" href="/student">About</a></div></div>
+            <div id="nav_two"><div id="contact_div"><a id="contact" href="/instructor">Contact</a></div></div>
+            <div id="nav_three">
+                <div id="home_div">
+                    <div id="left_home_div"></div>
+                    <div id="right_home_div">
+                        <a id="home_signup" href="/">Sign Up</a></div>
+                        <a id="home_login" href="/sign_in">Log In</a></div>
+                        <div id="home_search_div" class="ui action input">
+                            <input id="home_search_input" type="text" placeholder="Search...">
+                            <button id="home_search_button" class="ui icon button"><i class="search icon"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="drop_down">
+            <div id="nav_drawer">
+                <ol id="drop_down_lists">
+                    <li><a class="nav_lists" href="/dashboard">Dashboard<a></li>
+                    <li><a class="nav_lists" href="/instructor">Instructors<a></li>
+                    <li><a class="nav_lists" href="/student">Students<a></li>
+                    <li><a class="nav_lists" href="/cohort">Cohorts<a></li>
+                    <li><a class="nav_lists" href="/course">Courses<a></li>
+                </ol>
+                <div id="ham_burger">
+                    <div id="my_burger">
+                        <div id="close_burger"><i id="close_icon" class="align justify icon close_icon"></i></div>
+                        <div id="show_burger"><i id="show_icon" class="align justify icon show_icon"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="right_drop_down">
+            <%= image_tag "totem.svg", width:'100px', :id => "totem_image" %>
+            <br>
+            <%= yield %>
+        </div>
+
+        <div id="shadow"></div>
+        <footer id="footer"></footer>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </body>
+</html>

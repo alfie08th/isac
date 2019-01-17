@@ -1,0 +1,17 @@
+I"k(function() {
+  var post_body, post_creator, post_title;
+
+  post_title = document.querySelectorAll('.post_title');
+
+  post_body = document.querySelectorAll('.post_body');
+
+  post_creator = document.querySelectorAll('.post_creator');
+
+  post_title.style.color = 'red';
+
+  post_body.style.color = 'pink';
+
+  post_creator.style.color = 'dodgerblue';
+
+}).call(this);
+:ET

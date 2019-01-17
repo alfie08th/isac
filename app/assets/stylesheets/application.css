@@ -1,0 +1,317 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+
+    width:100%;
+    height:100%;
+}
+/* #big_drop_down{
+    width:200px;
+    height:100%;
+    position:fixed;
+    top:0;
+    z-index: 1;
+} */
+
+#totem_image{
+    z-index: -1;
+}
+#ham_burger{
+    width:50px;
+    height:50px;
+    /* background-color:yellow; */
+    transition: .5s;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#my_burger{
+    width:50px;
+    height:50px;
+    /* background-color:yellow; */
+    transition: .5s;
+    position:relative;
+    top:0;
+    left:0;
+}
+#show_burger{
+  width:50px;
+  height:50px;
+  color:white;
+  background-color:pink;
+  position:absolute;
+}
+#close_burger{
+  width:50px;
+  height:50px;
+  color:white;
+  position:absolute;
+  text-align:center;
+  background-color:lightgreen;
+}
+#close_icon{
+    margin-top:10px;
+}
+
+
+
+#drop_down{
+    width:250px;
+    height:100%;
+    text-align:center;
+    transition: .5s;
+    position:fixed;
+    z-index: 1;
+}
+#nav_drawer{
+    width:100%;
+    height:100%;
+    /* background-color:red; */
+    position:relative;
+}
+#drop_down_lists{
+    width:100%;
+    background-color:red;
+    height:100%;
+    position:absolute;
+    padding-left: 80px;
+    left:-250px;
+    top:0;
+}
+li{
+    list-style-type: none;
+    width:100%;
+    text-align: left;
+    margin-top:50px;
+}
+.nav_lists{
+    color:white;
+}
+
+#show_icon{
+    margin:10px 0px 0px 10px;
+}
+#form2{
+    display:none;
+}
+
+
+#shadow{
+    width:100%;
+    height:500%;
+    /* background-color:green; */
+    background-color:rgba(0,0,0,0.6);
+    position:absolute;
+    display:none;
+    top:0;
+}
+
+@keyframes rotateburger{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes moveRight{
+    0%{
+        left: -250px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+@keyframes moveLeftt{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: -250px;
+    }
+}
+
+
+#right_drop_down{
+width:85%;
+margin: 0 auto;
+position:relative;
+z-index: 1;
+}
+
+#my_nav_bar{
+    width:80%;
+    height:100px;
+    display:flex;
+    /* background-color:rgba(160,32,240, 0.8); */
+    background-color:white;
+    /* box-shadow: 5px 5px 5px rgba(0,0,0,0.6); */
+    position:absolute;
+    margin:20px 20px 0px;
+    z-index: 2;
+    right:0;
+}
+#nav_one, #nav_two{
+    width:20%;
+    text-align:center;
+    font-weight:bold;
+}
+#nav_three{
+    width:60%
+}
+
+#home_div, #about_div, #contact_div{
+    width:100%;
+    height:50px;
+    padding-top:15px;
+    transition:.2s;
+    background-color: #d5adc8;
+    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+}
+/* , #contact_div{
+    width:100%;
+    height:50px;
+    padding-top:15px;
+    transition:.2s;
+    } */
+
+/* #home_div:hover, #about_div:hover, #contact_div:hover{
+    background-color: #d5adc8;
+    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+} */
+#left_home_div, right_home_div{
+    height:100%;
+    background-color:white;
+    width:30%;
+    float:left;
+}
+#right_home_div{
+    width:70%;
+}
+
+#home_signup, #home_login, #home_search_div{
+    width:20%;
+    height:50px;
+    float:left;
+    background-color:red;
+}
+#home_login,#home_search_div{
+    background-color:yellow;
+}
+#home_search_div{
+    width:25%;
+}
+#home_login{
+    width:15%;
+}
+
+
+#home_search_input{
+    /* width:150px; */
+    height:30px;
+}
+#home_search_button{
+    width:30px;
+    height:30px;
+}
+
+#home, #about, #contact{
+    width:70%;
+    height:80px;
+    text-decoration: none;
+    font-weight:100;
+    z-index:4;
+    color:#020006;
+}
+#home:hover, #about:hover, #contact:hover{
+    color:white;
+    /* background-color:rgba(160, 32, 240, 0.7); */
+    transition:.2s;
+}
+
+/*
+
+#first_content{
+    width:90%;
+    height:500px;
+    float:right;
+    display:flex;
+    margin-top:50px;
+}
+#first_content_left, #first_content_right{
+    width:50%;
+    height:100%;
+    display:inline;
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+
+}
+#first_content_right{
+    transform: rotate(180deg);
+    background-color: #abe9cd;
+    z-index: -1;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+}
+
+
+#scroll{
+    position:absolute;
+    /* width:100%; */
+    /* margin-top:570px; */
+    /* margin-left:680px; */
+    /* background-color:#3eadcf;
+}
+     */
+
+
+/* #scroll>h4{
+}
+/*
+#big_div{
+    width:90%;
+    height:800px;
+    display:flex;
+    margin:0 auto;
+}
+#left, #right, #center{
+    display: inline;
+    width:500px;
+    height:400px;
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    margin:80px 25px 50px 25px;
+}
+#right{
+background-color #bd4f6c;
+background-image linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);
+
+}
+#center{
+background-color: #d5adc8;
+background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+} */
+
+
+#footer{
+    width:100%;
+    height:200px;
+    margin-top:50px;
+    background-color:rgba(0, 0, 255, 0.2);
+}
